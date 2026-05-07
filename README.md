@@ -1,4 +1,4 @@
-# 🏠 House Price Prediction using Machine Learning
+# House Price Prediction using Machine Learning
 
 ### End-to-End Regression Project | Kaggle Competition Solution
 
@@ -7,7 +7,7 @@
 ![XGBoost](https://img.shields.io/badge/XGBoost-Boosting-green.svg)
 ![Status](https://img.shields.io/badge/Project-Completed-success.svg)
 
-## 📌 Project Overview
+##  Project Overview
 
 This project is a complete **Machine Learning Regression Pipeline** built on the Ames Housing Dataset from Kaggle.
 
@@ -23,7 +23,7 @@ It covers:
 - Model Saving
 
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 house-price-prediction/
@@ -61,7 +61,7 @@ house-price-prediction/
 └── README.md
 ```
 
-## 🔄 Pipeline Steps
+## Pipeline Steps
 
 ```
 Step 1  →  Data Loading & Basic Exploration
@@ -83,7 +83,7 @@ Step 14 →  Model Saved as .pkl
 ---
 ---
 
-## 📊 Models Used
+##  Models Used
 
 | Model | Type | Data Used |
 |---|---|---|
@@ -94,40 +94,40 @@ Step 14 →  Model Saved as .pkl
 
 ---
 
-## 📈 Baseline Model Results
+## Baseline Model Results
 
 | Model | Train R² | Test R² | RMSE | Overfit |
 |---|---|---|---|---|
 | Linear Regression | 0.9047 | 0.8875 | 0.1111 | ✅ No |
-| Random Forest | 0.9793 | 0.8663 | 0.1211 | ⚠️ Yes |
-| Gradient Boosting | 0.9631 | 0.8913 | 0.1092 | ⚠️ Yes |
-| XGBoost | 0.9999 | 0.8652 | 0.1216 | ⚠️ Yes |
+| Random Forest | 0.9793 | 0.8663 | 0.1211 |  Yes |
+| Gradient Boosting | 0.9631 | 0.8913 | 0.1092 |  Yes |
+| XGBoost | 0.9999 | 0.8652 | 0.1216 |  Yes |
 
 ---
 
-## 📈 After Hyperparameter Tuning
+## After Hyperparameter Tuning
 
 | Model | Train R² | Test R² | RMSE | Overfit |
 |---|---|---|---|---|
 | **Ridge Regression** | **0.9031** | **0.8911** | **0.1093** | **✅ No** |
-| Random Forest | 0.9806 | 0.8698 | 0.1195 | ⚠️ Yes |
-| Gradient Boosting | 0.9646 | 0.8947 | 0.1075 | ⚠️ Yes |
-| XGBoost | 0.9861 | 0.9085 | 0.1002 | ⚠️ Yes |
+| Random Forest | 0.9806 | 0.8698 | 0.1195 |  Yes |
+| Gradient Boosting | 0.9646 | 0.8947 | 0.1075 |  Yes |
+| XGBoost | 0.9861 | 0.9085 | 0.1002 |  Yes |
 
-## 🎯 Final Selected Model
+##  Final Selected Model
 
-# 🥇 Ridge Regression
+#  Ridge Regression
 
 Chosen because it delivered:
 - Stable cross-validation performance
 - Better generalization
 - Simpler deployment
 - Fast inference
-- > 🏆 **Best Model: Ridge Regression**
+- >  **Best Model: Ridge Regression**
 > Selected for clean generalization — zero overfitting (Train-Test diff = 0.012), stable CV performance, and production reliability.
 
 
-## 📂 Dataset Information
+##  Dataset Information
 
 | Item | Value |
 |------|------|
@@ -140,7 +140,7 @@ Chosen because it delivered:
 - **Source:** [Kaggle — House Prices: Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
 
 
-## 🧪 Key EDA Findings
+##  Key EDA Findings
 
 - **SalePrice** is right-skewed → Log transformation applied (`np.log1p`)
 - **OverallQual** is the strongest predictor (Pearson r = 0.79)
@@ -151,7 +151,7 @@ Chosen because it delivered:
 
 ----
 
-## 🛠️ Feature Engineering
+##  Feature Engineering
 
 7 new features created from existing columns:
 
@@ -167,7 +167,7 @@ Chosen because it delivered:
 
 ---
 
-## 🤖 Models Compared
+##  Models Compared
 
 - Linear Regression
 - Ridge Regression
@@ -175,7 +175,7 @@ Chosen because it delivered:
 - Gradient Boosting
 - XGBoost
 
-## 📈 Final Tuned Performance
+##  Final Tuned Performance
 
 | Model | Train R² | Test R² | RMSE |
 |------|---------|--------|------|
@@ -184,7 +184,7 @@ Chosen because it delivered:
 | Gradient Boosting | 0.9646 | 0.8947 | 0.1075 |
 | XGBoost | 0.9861 | 0.9085 | 0.1002 |
 
-## 💾 Saved Files
+##  Saved Files
 
 ```text
 models/
@@ -192,7 +192,7 @@ models/
 ├── scaler.pkl
 └── feature_names.pkl
 ```
-## ⚙️ Installation
+##  Installation
 
 ```bash
 # 1. Clone the repository
@@ -214,7 +214,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 jupyter notebook notebooks/house_price_prediction.ipynb
@@ -222,11 +222,11 @@ jupyter notebook notebooks/house_price_prediction.ipynb
 
 Run all cells from top to bottom. The notebook is clearly divided into labeled sections.
 
-> ⚠️ **Note:** Place the dataset file inside the `data/` folder before running:
+> **Note:** Place the dataset file inside the `data/` folder before running:
 > `data/train Data House Price.csv`
 
 ---
-## 🔮 Load and Use the Saved Model
+## Load and Use the Saved Model
 
 ```python
 import joblib
@@ -250,7 +250,7 @@ scaler = joblib.load('models/scaler.pkl')
 ```
 
 ---
-## 📦 Requirements
+## Requirements
 
 ```
 pandas
@@ -270,7 +270,7 @@ pip install -r requirements.txt
 
 ---
 
-## 👤 Author
+## Author
 
 **Sunil Kumar**
 MSc Artificial Intelligence & Machine Learning — IIIT Lucknow
@@ -281,7 +281,7 @@ MSc Artificial Intelligence & Machine Learning — IIIT Lucknow
 
 ---
 
-## 🌟 Future Improvements
+## Future Improvements
 
 - Streamlit Deployment
 - Ensemble Stacking
